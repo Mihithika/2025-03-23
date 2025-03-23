@@ -1,11 +1,12 @@
 //console.log("Hello JavaScript!");
 
-
-let systemnumber=20;
+const maxtries = 3;
+let systemnumber=10;
 function guess(){
     let userInputText=parseInt(document.getElementById("txtnum").value);
 
     document.getElementById("print").innerText=userInputText;
+    
     if(userInputText<systemnumber){
         //console.log("Too Low!");
         let tl="Too Low!";
@@ -20,5 +21,3 @@ function guess(){
         document.getElementById("print4").innerText=tr;
     }
 }
-
-alert("Your Rounds are over!");
